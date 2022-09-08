@@ -1,0 +1,6 @@
+{
+    "paths_configs" : [
+        "configs/colors.json",
+        "configs/elements_parameters.json"
+    ]
+}
