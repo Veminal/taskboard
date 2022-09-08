@@ -13,10 +13,10 @@ class MapConfigurationContextBuilder
       _configParser = abstractConfigParser;
 
   @override
-  Future<Map> buildContext(List<String> initParams) async {
+  Future<Map> buildContext(Map initParams) async {
     Map context = HashMap();
-    initParams.forEach((path) async {
-      _configParser.setListWithPathesToFile = path;
+    initParams.entries.forEach((path) async {
+      _configParser.setListWithPathesToFile = path.value;
       Map temp = await _configParser.parse();
       context.addAll(temp);
     });
