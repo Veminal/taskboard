@@ -1,3 +1,4 @@
 abstract class ConnectDatabase {
-  void connect(Map parameters);
+  void connect();
+  void close();
 }

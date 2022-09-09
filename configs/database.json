@@ -1,0 +1,7 @@
+{
+    "host" : "localhost",
+    "port" : 5432,
+    "db_name" : "tasks_db",
+    "db_username": "master",
+    "db_password" : "12345"
+}
