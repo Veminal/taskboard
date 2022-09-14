@@ -13,12 +13,12 @@ class PostgresConfig {
   String dbUserName;
   String dbPassword;
 
-  factory PostgresConfig.fromJson(Map<String, dynamic> json) {
+  factory PostgresConfig.fromJson(Map<String, dynamic> parameters) {
     return PostgresConfig(
-        json['host'] as String,
-        json['port'] as int,
-        json['db_name'] as String,
-        json['db_username'] as String,
-        json['db_password'] as String);
+        parameters['host'] as String,
+        parameters['port'] as int,
+        parameters['db_name'] as String,
+        parameters['db_username'] as String,
+        parameters['db_password'] as String);
   }
 }

@@ -1,5 +1,9 @@
 {
-    "login_form" : "size",
+    "center_form_size": [
+        200, 300
+    ],
     "border_color" : "black",
-    "button_color" : "blue"
+    "button_color" : "blue",
+    "app_bar_color" : "blue",
+    "background_color" : "white"
 }

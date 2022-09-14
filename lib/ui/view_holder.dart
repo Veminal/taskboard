@@ -6,7 +6,7 @@ class ViewHolder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      color: Colors.blueAccent,
+      color: Colors.black,
     );
   }
 }
