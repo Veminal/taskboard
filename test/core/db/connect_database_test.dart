@@ -9,7 +9,7 @@ void main() {
       "port": 5432,
       "db_name": "board_db",
       "db_username": "postgres",
-      "db_password": "l1i4n9k2i0n7"
+      "db_password": ""
     };
     var postgresParameters = PostgresConfig.fromJson(configMap);
     var connection = PostgreSQLConnection(postgresParameters.host,
