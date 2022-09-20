@@ -50,7 +50,6 @@ app.*.map.json
 /macos
 /web
 /windows
-/test
 /android
 pubspec.lock
 .vscode

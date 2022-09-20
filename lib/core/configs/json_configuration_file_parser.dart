@@ -13,15 +13,10 @@ class JsonConfigurationFileParser extends AbstractConfigurationFileParser {
     var fileForParsing;
     Map? resultMap;
     try {
-      if (kIsWeb) {
-        fileForParsing =
-            await webFile.HttpRequest.request(patchToConfigFilesList!);
-        resultMap =
-            jsonDecode(fileForParsing.response).cast(Map<String, dynamic>);
-      } else {
-        fileForParsing = await File(patchToConfigFilesList!).readAsString();
-        resultMap = jsonDecode(fileForParsing).cast(Map<String, dynamic>);
-      }
+      fileForParsing =
+          await webFile.HttpRequest.request(patchToConfigFilesList!);
+      resultMap =
+          jsonDecode(fileForParsing.response).cast(Map<String, dynamic>);
     } on Exception catch (e) {
       Logger logger = Logger("JsonConfigParserLoger");
       logger.shout(e);
